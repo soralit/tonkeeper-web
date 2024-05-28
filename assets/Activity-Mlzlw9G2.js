@@ -1,0 +1,7 @@
+import{ax as f,bL as g,a8 as m,f as h,r as s,Q as v,a1 as A,j as e,bM as c,bN as j,ai as P,b6 as F}from"./index-z3CvngUh.js";import{u as N,a as b,g as E,M as _}from"./useFetchNext-gnHMA7eg.js";import"./TonActivityEvents-fcdndn3P.js";import"./ActivityDetailsLayout-8lp4KXH7.js";import"./NftHeader-uTS0xySw.js";const M=f.lazy(()=>g(()=>import("./EmptyActivity-HFtO2-2k.js"),__vite__mapDeps([0,1,2,3,4,5,6]))),k=()=>{const a=m(),{api:u,standalone:x}=h(),i=s.useRef(null),{isFetched:d,fetchNextPage:l,hasNextPage:p,isFetchingNextPage:y,data:n}=N({queryKey:[a.active.rawAddress,v.activity,"all"],queryFn:({pageParam:t=void 0})=>new A(u.tonApiV2).getAccountEvents({accountId:a.active.rawAddress,limit:20,beforeLt:t,subjectOnly:!0}),getNextPageParam:t=>t.nextFrom>0?t.nextFrom:void 0}),r=y;b(p,r,l,x,i);const o=s.useMemo(()=>E(n,void 0),[n]);return d?o.length===0?e.jsx(s.Suspense,{fallback:e.jsx(c,{}),children:e.jsx(M,{})}):e.jsxs(e.Fragment,{children:[e.jsx(j,{}),e.jsxs(P,{ref:i,children:[e.jsx(_,{items:o}),r&&e.jsx(F,{size:3})]})]}):e.jsx(c,{})};export{k as default};
+function __vite__mapDeps(indexes) {
+  if (!__vite__mapDeps.viteFileDeps) {
+    __vite__mapDeps.viteFileDeps = ["assets/EmptyActivity-HFtO2-2k.js","assets/index-z3CvngUh.js","assets/index-eqTA7-MZ.css","assets/BuyAction-eOu1mM-j.js","assets/BuyItemNotification-1Tz62mp5.js","assets/Checkbox-MQ5csBGn.js","assets/v4-OErdnafK.js"]
+  }
+  return indexes.map((i) => __vite__mapDeps.viteFileDeps[i])
+}

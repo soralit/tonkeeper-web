@@ -1,0 +1,1 @@
+var o=Object.defineProperty;var t=(s,r,e)=>r in s?o(s,r,{enumerable:!0,configurable:!0,writable:!0,value:e}):s[r]=e;var a=(s,r,e)=>(t(s,typeof r!="symbol"?r+"":r,e),e);class n extends Error{constructor(e,c){super(e);a(this,"cause");this.name="UserCancelledError",this.cause=c}}export{n as U};
